@@ -3,6 +3,7 @@ PROJECT_NAME="$1"
 JOB_ID="$2"
 JOB_STATUS=$3
 TOKEN="$4"
+TESTE="$5"
 
 curl -s "http://rundeck-prd001.net/api/1/job/${JOB_ID}?project=${PROJECT_NAME}&authtoken=${TOKEN}&format=xml"  -o "/dev/shm/${JOB_ID}"  -v
 	 
